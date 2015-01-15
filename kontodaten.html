@@ -1,0 +1,86 @@
+<html> 
+<head> 
+<style type="text/css">
+ body {background-color: 0000ff}
+
+
+</style>
+
+<script>
+var hoverfirst1 = false , hoverfirst2 = false;
+
+function ab(){
+	if (document.kd.vname.value != "Vorname" && document.kd.name.value != "Name" && document.kd.vname.value != "" && document.kd.name.value != "" ){
+						if (document.kd.vname.value == Jannis || document.kd.vname.value == jannis){
+										if (document.kd.name.value == köksel || document.kd.name.value == Köksel){
+											neueSeite();
+										}
+										else {
+											alert("der name stimmt nicht mit der datenbanck ueberein")
+										}
+						} else {
+							alert("der name stimmt nicht mit der datenbank ueberein")
+						}
+
+	}
+	else {
+		alert("fuellen sie bitte das dokument komplett aus!")
+	}
+}
+
+function neueSeite(){
+
+	alert("hi")
+}
+
+function leer1(){
+if (!hoverfirst1){
+document.kd.name.value = "";
+hoverfirst1 = true ;
+}
+}
+
+
+function leer2(){
+if (!hoverfirst2){
+hoverfirst2 = true ;
+	document.kd.vname.value = "";
+}
+
+}
+
+</script>
+</head>
+
+
+<body >
+<font face="Tahoma" color="ffffff">
+<form name="kd" action="">
+<div align="right">
+
+	
+	<input type="string" name="name" value="Name" onmouseover= leer2()> 
+	<p>
+
+	<input type="string" name="vname" value="Vorname" onmouseover= leer1()>
+	</p>
+	<br />
+	<br />
+	<input type="button" value="absenden" onclick= ab()>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</form>
+</font>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Formular-Überprüfung</title>
+<script type="text/javascript"><!--
+function pruefen() {
+   // ... kommt noch
+   return true;
+}
+//--></script>
+</head>
+<body>
+<h1>Anmeldeformular</h1>
+<form action="/cgi-bin/skript" name="Fragebogen"
+onsubmit="return pruefen()">
+Vorname: <input type="text" name="Vorname" /><br />
+Nachname: <input type="text" name="Nachname" /><br />
+E-Mail-Adresse: <input type="text" name="Email" /><br />
+<input type="radio" name="Geschlecht" value="m" />
+männlich |
+   <input type="radio" name="Geschlecht" value="w" />
+   weiblich<br />
+Welche Bücher von Galileo Press besitzen Sie?<br />
+   <input type="checkbox" name="Flash" /> Flash |
+   <input type="checkbox" name="JavaScript"> JavaScript |
+   <input type="checkbox" name="ActionScript">
+   Einstieg in ActionScript<br />
+Welches der Bücher hat das schönste Cover?
+   <select name="Cover">
+   <option>Bitte wählen</option>
+   <option value="Flash">Flash</option>
+   <option value="JavaScript">JavaScript</option>
+   <option value="ActionScript">Einstieg in ActionScript
+</option>
+   </select><br />
+<input type="submit" value="Absenden" />
+<input type="reset" value="Formular löschen" />
+</form>
+</body>
+</html>

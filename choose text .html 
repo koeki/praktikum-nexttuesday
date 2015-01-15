@@ -1,0 +1,16 @@
+<html>
+<head>
+
+
+</head>
+<body>
+
+
+
+
+</body>
+<frameset 20%,80% >
+<frame src="cho1.html">
+<frame src="cho2.html">
+</frameset>
+</html>
